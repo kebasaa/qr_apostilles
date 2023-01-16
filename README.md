@@ -25,13 +25,13 @@ In order for the documents to be easily transferrable, the name fields will cont
 When a child is born, the issuing authority (hospital, population office, judge or similar) scans the machine-readable strips of identity documents (ID or passport) of both parents. The following fields are automatically added based on this information:
 1. *Citizenship(s):* A child usually carries the citizenships of both parents, and in some cases that of the place of birth
 2. *Surname:* Multiple options are available here, but this is typically determined automatically based on the citizenship. Options are the following:
-  1. Surname of the father (e.g., common in Germany)
-  2. Surname of the mother (e.g., accepted alternative to (1) in Switzerland)
-  3. Given name of the father (e.g., common in India, Ethiopia)
-  4. Given name of the mother
-  5. Combined surname of father, then mother (e.g., common in Spain, Portugal, Brazil)
-  6. Combined surname of mother, then father
-  7. Other (e.g., clan name)
+   1. Surname of the father (e.g., common in Germany)
+   2. Surname of the mother (e.g., accepted alternative to (1) in Switzerland)
+   3. Given name of the father (e.g., common in India, Ethiopia)
+   4. Given name of the mother
+   5. Combined surname of father, then mother (e.g., common in Spain, Portugal, Brazil)
+   6. Combined surname of mother, then father
+   7. Other (e.g., clan name)
 
 The only fields that are entered are the date of birth, location, name of the issuing authority and issuing country.
 
