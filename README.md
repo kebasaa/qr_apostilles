@@ -161,17 +161,50 @@ The following fields are available:
 
 ### Example JSON code
 
+Example criminal record with international names:
 ```
 {
-  "firstName": "John",
-  "lastName": "Smith",
+  "firstName": "Juerg",
+  "firstName-deu": "Jürg"
+  "lastName": "Mustermann",
   "dateOfBirth": "1970-01-01",
   "citizenship": "CHE",
   "criminalRecord": False,
   "issueDate": "2023-01-01",
   "issuingAuthority": "Department of Justice",
+  "issuingAuthority-deu": "Bundesamt für Justiz",
   "issuingPlace": "Bern",
-  "issuingCountry": "CHE",
+  "issuingCountry": "CHE"
+}
+```
+
+Example birth certificate:
+```
+{
+  "firstName": "Juerg",
+  "firstName-deu": "Jürg"
+  "lastName": "Mustermann",
+  "dateOfBirth": "1970-01-01",
+  "surnameType": "surnameOfFather",
+  "gender": "M",
+  "parents": [
+    {
+      "firstName": "Hans",
+      "lastName": "Mustermann",
+      "dateOfBirth": "1945-01-01",
+    },
+    {
+      "firstName": "Anna",
+      "lastName": "Example",
+      "dateOfBirth": "1950-01-01",
+    }
+  ],
+  "issueDate": "2022-07-01",
+  "issuingAuthority": "Population Registry",
+  "issuingAuthority-deu": "Einwohnerkontrolle",
+  "issuingPlace": "Zuerich",
+  "issuingPlace-deu": "Zürich",
+  "issuingCountry": "CHE"
 }
 ```
 
