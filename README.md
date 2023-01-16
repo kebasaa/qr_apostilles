@@ -74,7 +74,8 @@ Example birth certificate:
   "issuingAuthority-deu": "Einwohnerkontrolle",
   "issuingPlace": "Zuerich",
   "issuingPlace-deu": "Zürich",
-  "issuingCountry": "CHE"
+  "issuingCountry": "CHE",
+  "documentType": "birthCertificate"
 }
 ```
 
@@ -180,8 +181,14 @@ This document is sometimes also called a *letter of non-impediment*, and confirm
   "issuingAuthority": "Ministry of Interior",
   "issuingAuthority-heb": "משרד הפנים",
   "issuingPlace": "Tel Aviv",
-  "issuingCountry": "ISR"
+  "issuingCountry": "ISR",
+  "documentType": "certificateCivilStatus"
 }
+```
+
+Corresponding Base64:
+```
+ewogICJmaXJzdE5hbWUiOiAiSm9uYXRoYW4iLAogICJmaXJzdE5hbWUtaGViIjogIteZ15XXoNeq158iCiAgImxhc3ROYW1lIjogIkNvaGVuIiwKICAibGFzdE5hbWUtaGViIjogIteb15TXnyIsCiAgIm1haWRlbk5hbWUiOiBudWxsLAogICJkYXRlT2ZCaXJ0aCI6ICIxOTkwLTAyLTAzIiwKICAiZ2VuZGVyIjogIk0iLAogICJjaXRpemVuc2hpcCI6ICJJU1IiLAogICJjaXZpbFN0YXR1cyI6ICJtYXJyaWVkIgogICJjaXZpbFN0YXR1c0NoYW5nZSI6ICIyMDE1LTAzLTAxIgogICJzcG91c2UiOiB7CiAgICAgImZpcnN0TmFtZSI6ICJBbm5lIiwKICAgICAiZmlyc3ROYW1lLWhlYiI6ICLXl9eg15QiCiAgICAgImxhc3ROYW1lIjogIkNvaGVuIiwKICAgICAibGFzdE5hbWUtaGViIjogIteb15TXnyIsCiAgICAgIm1haWRlbk5hbWUiOiBNYXJ0aW4sCiAgICAgImRhdGVPZkJpcnRoIjogIjE5OTItMDMtMDQiLAogICAgICJnZW5kZXIiOiAiRiIsCiAgICAgImNpdGl6ZW5zaGlwIjogIkZSRSIKICB9LAogICJwYXJlbnRzIjogWwogICAgewogICAgICAiZmlyc3ROYW1lIjogIkRhbmllbCIsCgkgICJmaXJzdE5hbWUtaGViIjogIteT16DXmdeQ15wiCiAgICAgICJsYXN0TmFtZSI6ICJDb2hlbiIsCiAgICAgICJsYXN0TmFtZS1oZWIiOiAi15vXlNefIiwKICAgICAgImRhdGVPZkJpcnRoIjogIjE5NDUtMDEtMDEiLAogICAgfSwKICAgIHsKICAgICAgImZpcnN0TmFtZSI6ICJBYmlnYWlsIiwKCSAgImZpcnN0TmFtZS1oZWIiOiAi15DXkdeZ15LXmdec4oCOIgogICAgICAibGFzdE5hbWUiOiAiQ29oZW4iLAogICAgICAibGFzdE5hbWUtaGViIjogIteb15TXnyIsCiAgICAgICJkYXRlT2ZCaXJ0aCI6ICIxOTUwLTAxLTAxIiwKICAgIH0KICBdLAogICJpc3N1ZURhdGUiOiAiMjAyMi0wNy0wMSIsCiAgImlzc3VpbmdBdXRob3JpdHkiOiAiTWluaXN0cnkgb2YgSW50ZXJpb3IiLAogICJpc3N1aW5nQXV0aG9yaXR5LWhlYiI6ICLXntep16jXkyDXlNek16DXmdedIiwKICAiaXNzdWluZ1BsYWNlIjogIlRlbCBBdml2IiwKICAiaXNzdWluZ0NvdW50cnkiOiAiSVNSIiwKICAiZG9jdW1lbnRUeXBlIjogImNlcnRpZmljYXRlQ2l2aWxTdGF0dXMiCn0=
 ```
 
 ### Criminal record
@@ -209,7 +216,8 @@ Example criminal record with international names:
   "issuingAuthority": "Department of Justice",
   "issuingAuthority-deu": "Bundesamt für Justiz",
   "issuingPlace": "Bern",
-  "issuingCountry": "CHE"
+  "issuingCountry": "CHE",
+  "documentType": "excerptCriminalRecord"
 }
 ```
 
