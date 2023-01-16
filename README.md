@@ -10,13 +10,25 @@
 
 ## Principles
 
-Fields are saved in JSON, using the UTF-8 internationalised character encoding
+Document fields should be saved in JSON, with standardised fields for each document type. UTF-8 is used for internationalised character encoding.
 
-*Languages:* In order for the documents to be easily transferrable, the name fields will contain both a simple ASCII (latin alphabet, English) version as is common in 
+The JSON string is then converted to a Base64 string, signed by the issued and encrypted. The public key is available openly. 
+
+In the receiving office/country, the QR code can be read, with the document contents verified using the signature. Then, the fields are transferred to the receiving country's computer system automatically (thanks to the standardisation) and a new document in that country's format can be issued on the spot.
+
+In order for the documents to be easily transferrable, the name fields will contain both a simple ASCII (latin alphabet, English) version as is common in passports and identification documents (in the machine-readable strip), and in any set of additional languages for special symbols or scripts. Language-specific fields are specified using the ISO 639-3 three-letter language codes.
 
 ## Examples
 
 ### Birth certificate
+
+When a child is born, the issuing authority (hospital, population office, judge or similar) scans the machine-readable strips of identity documents (ID or passport) of both parents. The following fields are automatically added based on this information:
+1. Citizenship(s): A child usually carries the citizenships of both parents, and in some cases that of the place of birth
+2. Surname:
+
+The only fields that are entered are the date of birth, location, name of the issuing authority and issuing country.
+
+Surname and citizenship is automatically assessed using the parents' documents.
 
 ### Marriage certificate
 
