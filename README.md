@@ -10,6 +10,10 @@
 
 ## Principles
 
+Fields are saved in JSON, using the UTF-8 internationalised character encoding
+
+*Languages:* In order for the documents to be easily transferrable, the name fields will contain both a simple ASCII (latin alphabet, English) version as is common in 
+
 ## Examples
 
 ### Birth certificate
@@ -23,5 +27,5 @@
 
 ## License
 
-This software and documents are distributed under the Creative Commons
+This software and documents are distributed under the Creative Commons Zero v1.0 Universal, i.e. the document and code can be freely distributed, used and modified without any copyright restrictions (see license file).
 
