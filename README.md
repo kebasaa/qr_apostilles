@@ -71,6 +71,32 @@ The field for the surname after marriage may need to be updated manually. Some c
 3. First name of other spouse
 4. Combined name, enter combination character (e.g. space, dash)
 
+### Certificate of civil status / singleness
+
+This document is sometimes also called a *letter of non-impediment* in some countries, and confirms that a person is either married or single (or divorced). The following fields are available:
+
+1. Information about the person:
+   1. First (given) name
+   2. Surname
+   3. Maiden name (empty if not applicable)
+   4. Date of birth
+   5. Gender
+   6. Citizenship (including that of a place/province, if required)
+2. Civil status. The following are accepted:
+   1. Single
+   2. Married
+   3. Divorced
+   4. Widowed
+   5. Date of last change of status required. Birth date if single
+3. Details on the parents:
+   1. Given name(s)
+   2. Surnames
+   3. Birth dates
+4. Issuing authority:
+   1. Name of issuing authority
+   2. Issuing country
+   3. Date of issue of the document
+
 ### Criminal record
 
 The following fields are available:
