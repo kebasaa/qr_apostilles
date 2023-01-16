@@ -167,39 +167,13 @@ The following fields are available:
   "lastName": "Smith",
   "dateOfBirth": "1970-01-01",
   "citizenship": "CHE",
-  "address": {
-    "streetAddress": "21 2nd Street",
-    "city": "New York",
-    "state": "NY",
-    "postalCode": "10021-3100"
-  },
-  "phoneNumbers": [
-    {
-      "type": "home",
-      "number": "212 555-1234"
-    },
-    {
-      "type": "office",
-      "number": "646 555-4567"
-    }
-  ],
-  "children": [
-      "Catherine",
-      "Thomas",
-      "Trevor"
-  ],
-  "spouse": null
+  "criminalRecord": False,
+  "issueDate": "2023-01-01",
+  "issuingAuthority": "Department of Justice",
+  "issuingPlace": "Bern",
+  "issuingCountry": "CHE",
 }
 ```
-
-1. First (given) name
-2. Surname
-3. Date of birth
-4. Citizenship
-5. Criminal record empty (yes/no). If it is not empty, refer to printed fields on the document
-6. Date of issue
-7. Name of issuing authority
-8. Issuing country
 
 ## License
 
