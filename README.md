@@ -12,13 +12,17 @@
 
 Document fields should be saved in JSON, with standardised fields for each document type. UTF-8 is used for internationalised character encoding.
 
-The JSON string is then converted to a Base64 string, signed by the issued and encrypted. The public key is available openly. 
+The JSON string is then converted to a Base64 string, signed by the issued, encrypted and compressed. Then, a QR code is generated. The public key is available openly.
 
 In the receiving office/country, the QR code can be read, with the document contents verified using the signature. Then, the fields are transferred to the receiving country's computer system automatically (thanks to the standardisation) and a new document in that country's format can be issued on the spot.
 
 In order for the documents to be easily transferrable, the name fields will contain both a simple ASCII (latin alphabet, English) version as is common in passports and identification documents (in the machine-readable strip), and in any set of additional languages for special symbols or scripts. Language-specific fields are specified using the ISO 639-3 three-letter language codes.
 
+As the document QR codes can be readily decrypted and read, it is the responsibility of the document owner who they provide the documents to.
+
 ## Examples of common documents
+
+Note that all the name fields can have internationalised versions for special characters/alphabets, as mentioned above
 
 ### Birth certificate
 
@@ -73,7 +77,7 @@ The field for the surname after marriage may need to be updated manually. Some c
 
 ### Certificate of civil status / singleness
 
-This document is sometimes also called a *letter of non-impediment* in some countries, and confirms that a person is either married or single (or divorced). The following fields are available:
+This document is sometimes also called a *letter of non-impediment*, and confirms that a person is either married or single (or divorced). It is typically issued by the country/countries of citizenship. The following fields are available:
 
 1. Information about the person:
    1. First (given) name
@@ -88,11 +92,15 @@ This document is sometimes also called a *letter of non-impediment* in some coun
    3. Divorced
    4. Widowed
    5. Date of last change of status required. Birth date if single
-3. Details on the parents:
+3. Details on the spouse, if applicable:
+   1. Given name(s)
+   2. Surname
+   3. Birth date
+4. Details on the parents:
    1. Given name(s)
    2. Surnames
    3. Birth dates
-4. Issuing authority:
+5. Issuing authority:
    1. Name of issuing authority
    2. Issuing country
    3. Date of issue of the document
@@ -104,26 +112,55 @@ The following fields are available:
 2. Surname
 3. Date of birth
 4. Citizenship
-5. Issuing country
-6. Criminal record empty (yes/no). If it is not empty, refer to printed fields on the document
-7. Date of issue
+5. Criminal record empty (yes/no). If it is not empty, refer to printed fields on the document
+6. Date of issue
+7. Name of issuing authority
+8. Issuing country
 
 ### Driving license
 
 The following fields are available:
-1. First (given) name
-2. Surname
-3. Date of birth
-4. Citizenship (including of place/province, if required)
-5. Date of issue of the license
-6. Date of expiry of the license
-7. Issuing authority
-8. Issuing country
-9. Categories:
+
+1. Information about the person:
+   1. First (given) name
+   2. Surname
+   3. Date of birth
+   4. Citizenship (including of place/province, if required)
+2. Information about the license:
+   1. Date of issue of the license
+   2. Date of expiry of the license
+   3. Issuing authority
+   4. Issuing country
+3. Categories:
    1. Categories A to E are accepted, according to the 1968 International Convention relative to Motor Traffic
    2. Date of issue, for each category
    3. Date of expiry, for each category
-10. Code for additional restrictions (e.g., requiring glasses)
+4. Code for additional restrictions (e.g., requiring glasses)
+
+### Certificate of current/completed studies
+
+1. Information about the person:
+   1. First (given) name
+   2. Surname
+   3. Date of birth
+   4. Citizenship (including that of a place/province, if required)
+   5. Identity document or passport number
+2. Details on studies:
+   1. Type of degree (e.g. High School, professional license, BSc, MSc, PhD, Postdoc)
+   2. Title of degree
+   3. Starting date
+   4. End date (empty if currently studying for this degree)
+   5. Faculty
+   6. Department
+   7. Advisor (e.g. required for PhD, Postdoc)
+3. Details on issuing educational institution:
+   1. Name of School/University
+   2. Place/City, Province
+   3. Country
+   4. Date of issue
+
+### Example JSON code
+
 
 
 ## License
