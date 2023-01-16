@@ -22,7 +22,7 @@ As the document QR codes can be readily decrypted and read, it is the responsibi
 
 ## Examples of common documents
 
-Note that all the name fields can have internationalised versions for special characters/alphabets, as mentioned above
+Note that all the name fields can have internationalised versions for special characters/alphabets, as mentioned above. Furthermore, none of the provided personal details are real, they are just for demonstration purposes. Any similarity to real people is purely coincidental.
 
 ### Birth certificate
 
