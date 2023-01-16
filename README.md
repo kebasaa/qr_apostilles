@@ -18,12 +18,14 @@ In the receiving office/country, the QR code can be read, with the document cont
 
 In order for the documents to be easily transferrable, the name fields will contain both a simple ASCII (latin alphabet, English) version as is common in passports and identification documents (in the machine-readable strip), and in any set of additional languages for special symbols or scripts. Language-specific fields are specified using the ISO 639-3 three-letter language codes.
 
-## Examples
+## Examples of common documents
 
 ### Birth certificate
 
-When a child is born, the issuing authority (hospital, population office, judge or similar) scans the machine-readable strips of identity documents (ID or passport) of both parents. The following fields are automatically added based on this information:
-1. *Citizenship(s):* A child usually carries the citizenships of both parents, and in some cases that of the place of birth
+When a child is born, the issuing authority (hospital, population office, judge or similar) scans the machine-readable strips of identity documents (ID or passport) of both parents.
+
+The following fields are automatically added based on this information:
+1. *Citizenship(s):* A child usually carries the citizenships of both parents, and in some cases that of the place of birth. Note that some countries add the citizenship of a place or province of origin in a secondary field
 2. *Surname and surname format:* Multiple options are available here, but this is typically determined automatically based on the citizenship. In the case of multiple citizenships, the one of the options is chosen out of all the allowable ones from the countries of citizenship. Options are the following:
    1. Surname of the father (e.g., common in Germany)
    2. Surname of the mother (e.g., accepted alternative to (1) in Switzerland)
@@ -34,7 +36,7 @@ When a child is born, the issuing authority (hospital, population office, judge 
    7. Other (e.g., clan name): Entered manually
 3. Issuing authority:
    1. Name of issuing authority
-   2. City/place
+   2. City/place, province
    3. Country
    
 The following fields are entered manually by the issuing authority:
@@ -44,9 +46,58 @@ The following fields are entered manually by the issuing authority:
 
 ### Marriage certificate
 
+The marriage officer scans the machine-readable strips of identity documents (ID or passport) of both spouses (and his own, should this be the first officiated marriage).
+
+The following fields are then provided automatically:
+1. For both spouses:
+   1. First (given) name
+   2. Surname before marriage (maiden name)
+   3. Date of birth
+   4. Number of identity document and issuing country
+   5. Citizenship
+2. For the marriage officer:
+   1. First (given) name
+   2. Surname
+3. About the marriage:
+   1. Date
+   2. City/place, province
+   3. Country
+   4. Name of issuing authority (e.g., religious authority, population registration center, judge)
+   5. Date of issue of the document
+
+The field for the surname after marriage may need to be updated manually. Some countries offer options to chose from, while others do not. The following options are accepted and are either selected automatically based on the law of the country of marriage or of citizenship(s), or are chosen if multiple options are available in those countries:
+1. Maiden surname kept
+2. Surname of other spouses
+3. First name of other spouse
+4. Combined name, enter combination character (e.g. space, dash)
+
 ### Criminal record
 
+The following fields are available:
+1. First (given) name
+2. Surname
+3. Date of birth
+4. Citizenship
+5. Issuing country
+6. Criminal record empty (yes/no). If it is not empty, refer to printed fields on the document
+7. Date of issue
+
 ### Driving license
+
+The following fields are available:
+1. First (given) name
+2. Surname
+3. Date of birth
+4. Citizenship (including of place/province, if required)
+5. Date of issue of the license
+6. Date of expiry of the license
+7. Issuing authority
+8. Issuing country
+9. Categories:
+   1. Categories A to E are accepted, according to the 1968 International Convention relative to Motor Traffic
+   2. Date of issue, for each category
+   3. Date of expiry, for each category
+10. Code for additional restrictions (e.g., requiring glasses)
 
 
 ## License
