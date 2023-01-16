@@ -24,18 +24,23 @@ In order for the documents to be easily transferrable, the name fields will cont
 
 When a child is born, the issuing authority (hospital, population office, judge or similar) scans the machine-readable strips of identity documents (ID or passport) of both parents. The following fields are automatically added based on this information:
 1. *Citizenship(s):* A child usually carries the citizenships of both parents, and in some cases that of the place of birth
-2. *Surname:* Multiple options are available here, but this is typically determined automatically based on the citizenship. Options are the following:
+2. *Surname and surname format:* Multiple options are available here, but this is typically determined automatically based on the citizenship. In the case of multiple citizenships, the one of the options is chosen out of all the allowable ones from the countries of citizenship. Options are the following:
    1. Surname of the father (e.g., common in Germany)
    2. Surname of the mother (e.g., accepted alternative to (1) in Switzerland)
    3. Given name of the father (e.g., common in India, Ethiopia)
    4. Given name of the mother
-   5. Combined surname of father, then mother (e.g., common in Spain, Portugal, Brazil)
+   5. Combined surname of father, then mother (e.g., common in Spain). Note here that in the case where the parents have a combined surname, one part of it has to be chosen to pass on to the child. For example, the first surname of a combined surname in Spain is the father's and is typically passed to a child. These surnames are typically separated by a space.
    6. Combined surname of mother, then father
-   7. Other (e.g., clan name)
-
-The only fields that are entered are the date of birth, location, name of the issuing authority and issuing country.
-
-Surname and citizenship is automatically assessed using the parents' documents.
+   7. Other (e.g., clan name): Entered manually
+3. Issuing authority:
+   1. Name of issuing authority
+   2. City/place
+   3. Country
+   
+The following fields are entered manually by the issuing authority:
+1. First name, provided by the parents
+2. Date of birth
+3. Gender
 
 ### Marriage certificate
 
