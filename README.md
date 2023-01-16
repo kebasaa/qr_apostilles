@@ -48,6 +48,36 @@ The following fields are entered manually by the issuing authority:
 2. Date of birth
 3. Gender
 
+Example birth certificate:
+```
+{
+  "firstName": "Juerg",
+  "firstName-deu": "Jürg"
+  "lastName": "Mustermann",
+  "dateOfBirth": "1970-01-01",
+  "surnameType": "surnameOfFather",
+  "gender": "M",
+  "parents": [
+    {
+      "firstName": "Hans",
+      "lastName": "Mustermann",
+      "dateOfBirth": "1945-01-01",
+    },
+    {
+      "firstName": "Anna",
+      "lastName": "Example",
+      "dateOfBirth": "1950-01-01",
+    }
+  ],
+  "issueDate": "2022-07-01",
+  "issuingAuthority": "Population Registry",
+  "issuingAuthority-deu": "Einwohnerkontrolle",
+  "issuingPlace": "Zuerich",
+  "issuingPlace-deu": "Zürich",
+  "issuingCountry": "CHE"
+}
+```
+
 ### Marriage certificate
 
 The marriage officer scans the machine-readable strips of identity documents (ID or passport) of both spouses (and his own, should this be the first officiated marriage).
@@ -95,7 +125,10 @@ This document is sometimes also called a *letter of non-impediment*, and confirm
 3. Details on the spouse, if applicable:
    1. Given name(s)
    2. Surname
-   3. Birth date
+   3. Maiden name
+   4. Birth date
+   5. Gender
+   6. Citizenship
 4. Details on the parents:
    1. Given name(s)
    2. Surnames
@@ -104,6 +137,52 @@ This document is sometimes also called a *letter of non-impediment*, and confirm
    1. Name of issuing authority
    2. Issuing country
    3. Date of issue of the document
+   
+```
+{
+  "firstName": "Jonathan",
+  "firstName-heb": "יונתן"
+  "lastName": "Cohen",
+  "lastName-heb": "כהן",
+  "maidenName": null,
+  "dateOfBirth": "1990-02-03",
+  "gender": "M",
+  "citizenship": "ISR",
+  "civilStatus": "married"
+  "civilStatusChange": "2015-03-01"
+  "spouse": {
+     "firstName": "Anne",
+     "firstName-heb": "חנה"
+     "lastName": "Cohen",
+     "lastName-heb": "כהן",
+     "maidenName": Martin,
+     "dateOfBirth": "1992-03-04",
+     "gender": "F",
+     "citizenship": "FRE"
+  },
+  "parents": [
+    {
+      "firstName": "Daniel",
+	  "firstName-heb": "דניאל"
+      "lastName": "Cohen",
+      "lastName-heb": "כהן",
+      "dateOfBirth": "1945-01-01",
+    },
+    {
+      "firstName": "Abigail",
+	  "firstName-heb": "אביגיל‎"
+      "lastName": "Cohen",
+      "lastName-heb": "כהן",
+      "dateOfBirth": "1950-01-01",
+    }
+  ],
+  "issueDate": "2022-07-01",
+  "issuingAuthority": "Ministry of Interior",
+  "issuingAuthority-heb": "משרד הפנים",
+  "issuingPlace": "Tel Aviv",
+  "issuingCountry": "ISR"
+}
+```
 
 ### Criminal record
 
@@ -116,6 +195,23 @@ The following fields are available:
 6. Date of issue
 7. Name of issuing authority
 8. Issuing country
+
+Example criminal record with international names:
+```
+{
+  "firstName": "Juerg",
+  "firstName-deu": "Jürg"
+  "lastName": "Mustermann",
+  "dateOfBirth": "1970-01-01",
+  "citizenship": "CHE",
+  "criminalRecord": False,
+  "issueDate": "2023-01-01",
+  "issuingAuthority": "Department of Justice",
+  "issuingAuthority-deu": "Bundesamt für Justiz",
+  "issuingPlace": "Bern",
+  "issuingCountry": "CHE"
+}
+```
 
 ### Driving license
 
@@ -159,54 +255,6 @@ The following fields are available:
    3. Country
    4. Date of issue
 
-### Example JSON code
-
-Example criminal record with international names:
-```
-{
-  "firstName": "Juerg",
-  "firstName-deu": "Jürg"
-  "lastName": "Mustermann",
-  "dateOfBirth": "1970-01-01",
-  "citizenship": "CHE",
-  "criminalRecord": False,
-  "issueDate": "2023-01-01",
-  "issuingAuthority": "Department of Justice",
-  "issuingAuthority-deu": "Bundesamt für Justiz",
-  "issuingPlace": "Bern",
-  "issuingCountry": "CHE"
-}
-```
-
-Example birth certificate:
-```
-{
-  "firstName": "Juerg",
-  "firstName-deu": "Jürg"
-  "lastName": "Mustermann",
-  "dateOfBirth": "1970-01-01",
-  "surnameType": "surnameOfFather",
-  "gender": "M",
-  "parents": [
-    {
-      "firstName": "Hans",
-      "lastName": "Mustermann",
-      "dateOfBirth": "1945-01-01",
-    },
-    {
-      "firstName": "Anna",
-      "lastName": "Example",
-      "dateOfBirth": "1950-01-01",
-    }
-  ],
-  "issueDate": "2022-07-01",
-  "issuingAuthority": "Population Registry",
-  "issuingAuthority-deu": "Einwohnerkontrolle",
-  "issuingPlace": "Zuerich",
-  "issuingPlace-deu": "Zürich",
-  "issuingCountry": "CHE"
-}
-```
 
 ## License
 
