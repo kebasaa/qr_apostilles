@@ -198,6 +198,7 @@ eJyVVN2amjAQfSWCYutFLwSVhWqsgCTkjhAWkID0Uxfx6Zvws8vW3f3ai9wkJzNnzpyZuD4llmEXIbbv
 ```
 
 Finally, the information can be stored as a QR code:
+
 ![Example certificate of civil status](figures/example_civil_status_certificate.png)
 
 ### Criminal record
