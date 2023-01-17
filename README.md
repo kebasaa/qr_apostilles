@@ -279,7 +279,7 @@ The following fields are available:
 
 ## Read and verify ID / Passports
 
-According to [an online blog post](https://www.kleemans.ch/identit%C3%A4tskarte-berechnung-pr%C3%BCfziffer), IDs typically contain a strip like this one:
+According to [an online blog post](https://www.kleemans.ch/identit%C3%A4tskarte-berechnung-pr%C3%BCfziffer), IDs and passports typically contain a strip like this one:
 
 ```
 IDCHEC8912345<6<<<<<<<<<<<<<<<
