@@ -140,7 +140,9 @@ This document is sometimes also called a *letter of non-impediment*, and confirm
    1. Name of issuing authority
    2. Issuing country
    3. Date of issue of the document
-   
+
+The following is an example document, containing data in both international English (required), and a right-to-left alphabet of some name fields (optional):
+
 ```
 {
   "firstName": "Jonathan",
