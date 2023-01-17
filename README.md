@@ -277,6 +277,34 @@ The following fields are available:
    3. Country
    4. Date of issue
 
+## Read and verify ID / Passports
+
+According to [an online blog post](https://www.kleemans.ch/identit%C3%A4tskarte-berechnung-pr%C3%BCfziffer), IDs typically contain a strip like this one:
+
+```
+IDCHEC8912345<6<<<<<<<<<<<<<<<
+8801018X2501017CHE<<<<<<<<<<<2
+MUSTER<<HANS<MICHAEL<<<<<<<<<<
+```
+
+Passports have:
+
+```
+PMCHEMUSTER<<HANS<MICHAEL<<<<<<<<<<<<<<<<<<<
+C8912345<6CHE8801018X2501017<<<<<<<<<<<<<<<2
+```
+
+Verification occurs using only the numeric parts:
+
+Each digit in order is multplied by 7, 3, and 1, then the result is summed up and the last digit of the result is the control digit. Letters are attributed a numeric value, i.e.: A = 0, B = 1, C = 2, etc. For example, for the first line of the ID:
+
+```
+ID number: C8912345, where C=2
+2*7 + 8*7 + 9*3 + 1*1 + 2*7 + 3*3 + 4*1 + 5*7 = 106 
+Verification number: 6
+```
+
+The overall verification number of the entire document is based on the document number (here C8912345), including a 0 between it and its verification number (6), the birth date (here 880101) and its verification number (8) and the expiry date of the document (here 250101) and its verification number (7). This results in 332, i.e. the overall verification number 2.
 
 ## License
 
