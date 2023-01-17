@@ -24,6 +24,8 @@ As the document QR codes can be readily decrypted and read, it is the responsibi
 
 Note that all the name fields can have internationalised versions for special characters/alphabets, as mentioned above. Furthermore, none of the provided personal details are real, they are just for demonstration purposes. Any similarity to real people is purely coincidental.
 
+Further note that the field names are spelled out here, but for the purpose of a QR code, shortened 3-letter acronyms will be used to save space.
+
 ### Birth certificate
 
 When a child is born, the issuing authority (hospital, population office, judge or similar) scans the machine-readable strips of identity documents (ID or passport) of both parents.
