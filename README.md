@@ -16,7 +16,7 @@ The JSON string is then converted to a Base64 string, signed by the issued, encr
 
 In the receiving office/country, the QR code can be read, with the document contents verified using the signature. Then, the fields are transferred to the receiving country's computer system automatically (thanks to the standardisation) and a new document in that country's format can be issued on the spot.
 
-In order for the documents to be easily transferrable, the name fields will contain both a simple ASCII (latin alphabet, English) version as is common in passports and identification documents (in the machine-readable strip), and in any set of additional languages for special symbols or scripts. Language-specific fields are specified using the ISO 639-3 three-letter language codes.
+In order for the documents to be easily transferrable, the name fields will contain both a simple ASCII (latin alphabet, English) version as is common in passports and identification documents (in the machine-readable strip, according to ICAO 9303), and in any set of additional languages for special symbols or scripts. Language-specific fields are specified using the ISO 639-3 three-letter language codes.
 
 As the document QR codes can be readily decrypted and read, it is the responsibility of the document owner who they provide the documents to.
 
@@ -301,10 +301,10 @@ Each digit in order is multplied by 7, 3, and 1, then the result is summed up an
 ```
 ID number: C8912345, where C=2
 2*7 + 8*7 + 9*3 + 1*1 + 2*7 + 3*3 + 4*1 + 5*7 = 106 
-Verification number: 6
+Check digit: 6
 ```
 
-The overall verification number of the entire document is based on the document number (here C8912345), including a 0 between it and its verification number (6), the birth date (here 880101) and its verification number (8) and the expiry date of the document (here 250101) and its verification number (7). This results in 332, i.e. the overall verification number 2.
+The overall check digit of the entire document is based on the document number (here C8912345), including a 0 between it and its check digit (6), the birth date (here 880101) and its check digit (8) and the expiry date of the document (here 250101) and its check digit (7). This results in 332, i.e. the overall check digit 2.
 
 ## License
 
