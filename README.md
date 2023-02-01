@@ -308,5 +308,5 @@ The overall check digit of the entire document is based on the document number (
 
 ## License
 
-This software and documents are distributed under the Creative Commons Zero v1.0 Universal, i.e. the document and code can be freely distributed, used and modified without any copyright restrictions (see license file).
+These documents are distributed under the Creative Commons Zero v1.0 Universal, i.e. the document and code can be freely distributed, used and modified without any copyright restrictions (see license file).
 
