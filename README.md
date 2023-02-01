@@ -6,7 +6,7 @@
 
 *The problem:* However, in many countries, the process of receiving and apostille is complicated, costly and slow, and the transfer of information is often difficult because documents are not standardised, machine-readable, nor is the stamp verifiable easily (e.g., digitally signed). Furthermore, entering the information on an apostilled document into a different state's information system is often prone to errors (a secretary has to type it by hand), and as the fields are not standardised, can lead to significant questions on how to deal with the information.
 
-*Aims:* The following document is aimed at describing an upgrade to the current apostille stamp system. In its most simplified form, documents and their fields will be standardised, include internationalised scrips, be machine-readable and be digitally signed (using QR codes).
+*Aims:* The following document is aimed at describing a suggested upgrade to the current apostille stamp system. In its most simplified form, documents and their fields will be standardised, include internationalised scrips, be machine-readable and be digitally signed (using QR codes).
 
 ## Principles
 
